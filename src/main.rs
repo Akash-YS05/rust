@@ -1,3 +1,4 @@
+mod conditions_loops;
 fn main() {
     let arr: [i8; 5] = [2,3,4,5,6];    //cant grow, size needs to be known at compile time
     let mut vect: Vec<i8> = vec![6,7,8,9,10]; //can grow, size can be changed at runtime
