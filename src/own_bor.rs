@@ -9,6 +9,11 @@ fn main() {
 
 
     //pass by reference allows borrowing the value while the ownership remains with the original variable
+    /*  Some rules:
+        1. At any given time, you can have either one mutable reference or any number of immutable references
+        2. References must always be valid
+        
+     */
     fn calculate_length(s: &String) -> usize {
         return s.chars().count();
     }

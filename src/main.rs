@@ -1,5 +1,6 @@
 mod conditions_loops;
 mod own_bor;
+mod structs;
 fn main() {
     fn get_len(s: &str) -> usize {
         s.chars().count()
@@ -13,6 +14,8 @@ fn main() {
     let x: i32 = 5;
     let mut y: i32 = 10;
     y+=10;
+
+    //the ! indicates that this is a macro. macros are used to generate code
     println!("{}", word);
     println!("Length of string = {}", get_len(&word));
     println!("Value of x (unmutable) is: {}", x);
