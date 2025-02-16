@@ -1,6 +1,7 @@
 mod conditions_loops;
 mod own_bor;
 mod structs;
+mod enums;
 fn main() {
     fn get_len(s: &str) -> usize {
         s.chars().count()

@@ -15,6 +15,11 @@ impl Square {
     fn area(&self) -> u32 {
         self.side * self.side
     }
+
+    //static method - no need to create an instance of the struct to call this method, calls the struct itself
+    fn debug() -> i32 {
+        return 1;
+    }
 }
 
 fn main() {
@@ -30,5 +35,6 @@ fn main() {
     };
 
     println!("The area of the square is = {}", sq.area());
+    println!("The debug value is = {}", Square::debug());
     println!("The user - {} (currently {}) who is signed with email - {} has signed in {} times", user.username, user.active, user.email, user.sign_in_count);
 }
