@@ -15,6 +15,21 @@ fn main() {
         println!("{}", z);
     }
 
+    println!("{}", fib(5));
+
+    fn fib(x: i32) -> i32 {
+        let mut first = 0;
+        let mut second = 1;
+        
+        for _i in 1..x - 1 {
+            let temp = second;
+            second = first + second;
+            first = temp;
+        }
+
+        return second;
+    }
+
 
     pub fn is_even(x: i8) -> bool {
         return x % 2 == 0;

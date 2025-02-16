@@ -1,5 +1,10 @@
 mod conditions_loops;
+mod own_bor;
 fn main() {
+    fn get_len(s: &str) -> usize {
+        s.chars().count()
+    }
+
     let arr: [i8; 5] = [2,3,4,5,6];    //cant grow, size needs to be known at compile time
     let mut vect: Vec<i8> = vec![6,7,8,9,10]; //can grow, size can be changed at runtime
     vect.push(11);
@@ -9,6 +14,7 @@ fn main() {
     let mut y: i32 = 10;
     y+=10;
     println!("{}", word);
+    println!("Length of string = {}", get_len(&word));
     println!("Value of x (unmutable) is: {}", x);
     println!("Value of y (mutable) is: {}", y+10);
     println!("isx current status is {}", isx);
