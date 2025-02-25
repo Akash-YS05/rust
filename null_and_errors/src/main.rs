@@ -1,5 +1,5 @@
 //Error handling is done by Result which is an enum with two variants - Ok and Err
-//option enum is used to handle null values as Rust does not have null variable
+//Option enum is used to handle null values as Rust does not have null variable
 use std::fs::File;
 
 fn main() {
@@ -20,7 +20,7 @@ fn main() {
 
 }
 
-fn find_first(name: String) -> Option<i32> {
+fn find_first(name: String) -> Option<i32> {     //<i32> is a generic which is used to basically tell the compiler that the output of the function will be an integer. usually helps avoiding code repitition
     for (index, char) in name.chars().enumerate() {
         if char == 'a' {
             return Some(index as i32);    //if the output is desirable then use Some variant of Option enum
