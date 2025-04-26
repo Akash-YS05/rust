@@ -1,9 +1,8 @@
 // use chrono::prelude::*; - import all the modules of chrono crate
 // use chrono::{Utc, Local};
+
 use dotenv::dotenv;
 use std::env;
-
-mod env_crate;
 
 fn main() {
     // let utc = Utc::now(); //now() is a static function
